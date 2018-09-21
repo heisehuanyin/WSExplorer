@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?><!--Group和Node唯一的区别就是Node不能有子节点，Group可以有 --><!--所有节点都是简要记录了文件信息，通过filepath属性指向真正的文件，Group也可以有指向文件，用作记录信息。 --><Group encoding="UTF-8" filepath="/Volumes/Transcend/Project/Java/WsProcessor/FileTemplate/ProjectInfo.txt" name="ProjectName">
+	<Node encoding="UTF-8" filepath="url_address" name="FileName"/>
+	<Group encoding="UTF-8" filepath="url_address" name="GroupName">
+		<Node encoding="UTF-8" filepath="url_address" name="FileName"/>
+	</Group>
+</Group>
