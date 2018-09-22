@@ -32,4 +32,8 @@ public interface GroupSymbo extends NodeSymbo{
 	 * @param child 指定节点
 	 * @return 位序，如果为 -1 ，表明该文件不是此group的child*/
 	int getChildIndex(NodeSymbo child);
+	
+	void GroupExplanded();
+	
+	void GroupFolded();
 }

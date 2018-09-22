@@ -9,7 +9,7 @@ import ws.editor.comn.WsPair;
  * 参数处理模块，处理各种模式与系统的衔接，决定软件的运行模式：静默、交互、图形<br>
  * 通过本模块是在Terminal中运行的实体，通过本模块调用核心模块实现各种功能<br>
  * 外面还可以在包含一个启动器，处理操作系统提供的各种参数，配置固定参数，用于不同默认模式下的启动*/
-public class WSP {
+public class WSExplorer {
 	private WsProcessor wsp = null;
 
 	private void openCtlModel() {
@@ -111,7 +111,7 @@ public class WSP {
 		System.out.println("==proc work=============");
 
 		if (args.length == 0) {
-			new WSP().openCtlModel();
+			new WSExplorer().openCtlModel();
 		}
 
 		if (args.length == 1 && args[0].equals("-help")) {
@@ -127,7 +127,7 @@ public class WSP {
 		if (args.length < 1 || (args[0].indexOf('-') == -1))
 			return;
 
-		WSP c = new WSP();
+		WSExplorer c = new WSExplorer();
 
 		if (args[0].indexOf('w') != -1) {
 			c.openGraphicsModel();

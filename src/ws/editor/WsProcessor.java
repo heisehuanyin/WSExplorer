@@ -49,7 +49,6 @@ import ws.editor.plugin.logport.DefaultLogPort;
 import ws.editor.plugin.menubar.DefaultMenuBar;
 import ws.editor.plugin.tablemodel.DefaultCSVModel;
 import ws.editor.plugin.textmodel.DefaultTextModel;
-import ws.editor.plugin.treemodel.DefaultProjectModel;
 import ws.editor.plugin.window.FSBrowser;
 
 /**
@@ -224,7 +223,6 @@ public class WsProcessor {
 		this.service_RegisterPlugin(new DefaultLogPort());
 		this.service_RegisterPlugin(new DefaultConfigPort());
 		this.service_RegisterPlugin(new DefaultTextModel());
-		this.service_RegisterPlugin(new DefaultProjectModel());
 		this.service_RegisterPlugin(new DefaultCSVModel());
 	}
 

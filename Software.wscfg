@@ -1,15 +1,8 @@
 #config items as list
-#Mon Sep 17 14:57:16 CST 2018
-editor.module.custom_setting.ws.editor.plugin.window.TwoViewWindow.VIEW_POSITION.ws.editor.plugin.contentview.DefaultTreeView=0
-editor.window.height=565
+#Sat Sep 22 14:06:58 CST 2018
+editor.window.description=ws.editor.plugin.window.FSBrowser
+LeftVisible_Ctrl=true
+editor.window.width=800
+editor.modulelist.suffix.fsbsetup=ws.editor.plugin.filesymbo.DefaultFileSymbo\=>ws.editor.plugin.textmodel.DefaultTextModel\=>ws.editor.plugin.contentview.DefaultTextView
+editor.window.height=600
 editor.menubar.description=ws.editor.plugin.menubar.DefaultMenuBar
-editor.modulelist.suffix.wsrc=ws.editor.plugin.filesymbo.DefaultFileSymbo\=>ws.editor.plugin.textmodel.DefaultTextModel\=>ws.editor.plugin.contentview.DefaultTextView
-editor.modulelist.suffix.csv=ws.editor.plugin.filesymbo.DefaultFileSymbo\=>ws.editor.plugin.textmodel.DefaultTextModel\=>ws.editor.plugin.tablemodel.DefaultCSVModel\=>ws.editor.plugin.contentview.DefaultTableView
-editor.module.custom_setting.ws.editor.plugin.window.TwoViewWindow.VIEW_POSITION.ws.editor.plugin.contentview.DefaultTextView=2
-editor.window.description=ws.editor.plugin.window.TwoViewWindow
-editor.window.width=849
-editor.module.custom_setting.ws.editor.plugin.window.TwoViewWindow.leftvisible=true
-editor.modulelist.suffix.txt=ws.editor.plugin.filesymbo.DefaultFileSymbo\=>ws.editor.plugin.textmodel.DefaultTextModel\=>ws.editor.plugin.contentview.DefaultTextView
-editor.module.custom_setting.ws.editor.plugin.window.TwoViewWindow.LEFTVIEW_WIDTH=252
-editor.modulelist.suffix.wsp1=ws.editor.plugin.filesymbo.DefaultFileSymbo\=>ws.editor.plugin.treemodel.DefaultProjectModel\=>ws.editor.plugin.contentview.DefaultTreeView
-editor.module.custom_setting.ws.editor.plugin.window.TwoViewWindow.VIEW_POSITION.ws.editor.plugin.contentview.DefaultTableView=2

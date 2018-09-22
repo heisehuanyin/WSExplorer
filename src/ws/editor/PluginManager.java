@@ -28,6 +28,7 @@ import ws.editor.plugin.window.FSBrowser;
 public class PluginManager {
 	private Map<String, PluginFeature> factoryContainer = new HashMap<>();
 	private Map<String, ArrayList<PluginFeature>> instances = new HashMap<>();
+	private ArrayList<PluginFeature> configunits = new ArrayList<>();
 	private WsProcessor schedule;
 	private String onlyoneCfgportF_id;
 	private String onlyoneLogportF_id;
@@ -96,6 +97,7 @@ public class PluginManager {
 			ArrayList<PluginFeature> cList = this.instances.get(url);
 			this.channel_SaveChannel(cList);
 		}
+		this.channel_SaveChannel(configunits);
 	}
 
 	// source=>module1=>module2=>module3=>module4=>the last one module
@@ -227,7 +229,8 @@ public class PluginManager {
 
 		ConfigPort config = ((ConfigPort) factory).createNewPort(path);
 		this.instance_RegisterPluginInstance(path, config);
-
+		this.configunits.add(config);
+		
 		return config;
 	}
 
@@ -248,6 +251,7 @@ public class PluginManager {
 
 		LogPort writer = ((LogPort) factory).createNewPort(path);
 		this.instance_RegisterPluginInstance(path, writer);
+		this.configunits.add(writer);
 
 		return writer;
 	}

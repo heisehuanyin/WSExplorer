@@ -9,7 +9,9 @@ import javax.swing.JPopupMenu;
 import javax.swing.JScrollPane;
 import javax.swing.JTree;
 import javax.swing.tree.DefaultMutableTreeNode;
+import javax.swing.tree.DefaultTreeCellRenderer;
 import javax.swing.tree.DefaultTreeModel;
+import javax.swing.tree.TreeCellRenderer;
 import javax.swing.tree.TreeNode;
 import javax.swing.tree.TreePath;
 import javax.swing.tree.TreeSelectionModel;
@@ -34,6 +36,9 @@ public class DefaultTreeView extends AbstractTreeView {
 
 	private void initTreeView(NodeSymbo nodeSymbo) {
 		nodeSymbo.addNodeEventListener(this);
+		TreeCellRenderer xx = tree.getCellRenderer();
+		((DefaultTreeCellRenderer)xx).setLeafIcon(((DefaultTreeCellRenderer)xx).getClosedIcon());
+		tree.setCellRenderer(xx);
 
 		root.setAllowsChildren(true);
 		tm.setAsksAllowsChildren(true);

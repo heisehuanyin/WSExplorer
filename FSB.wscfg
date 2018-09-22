@@ -1,0 +1,5 @@
+#config items as list
+#Sat Sep 22 14:06:58 CST 2018
+LeftVisible_Ctrl=true
+view_position.ws.editor.plugin.contentview.DefaultTextView=0
+LeftWidth.DiverderLocation=240
