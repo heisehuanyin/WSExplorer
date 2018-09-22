@@ -184,7 +184,6 @@ public class FSBrowser extends AbstractWindow {
 			int state = e.getStateChange();
 
 			int lw = split.getDividerLocation();
-			FSBrowser.this.core.instance_GetMainConfigUnit().setKeyValue(widthCtrlKey, "" + lw);
 
 			if (state == ItemEvent.SELECTED) {
 				Component[] cons = FSBrowser.this.getContentPane().getComponents();
@@ -195,8 +194,7 @@ public class FSBrowser extends AbstractWindow {
 				FSBrowser.this.getContentPane().add(split, BorderLayout.CENTER);
 
 				split.setRightComponent(rightV==null?new JPanel():rightV.getView());
-				String leftLocation = FSBrowser.this.core.instance_GetMainConfigUnit().getValue(widthCtrlKey, "80");
-				split.setDividerLocation(Integer.parseInt(leftLocation));
+				split.setDividerLocation(lw);
 
 			} else {
 				Component[] cons = FSBrowser.this.getContentPane().getComponents();
